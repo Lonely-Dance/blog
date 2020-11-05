@@ -105,6 +105,9 @@ var EmailCodeSchema = new Schema({
 // 操作数据库,通过model实现DRUD                                      
 module.exports = mongoose.model('mailcode', EmailCodeSchema)
 ```
+
+在router文件中发起请求时操作数据时存储数据即可
+
 ```js
      // 存储数据
             const doc = new MailCode({
@@ -116,5 +119,3 @@ module.exports = mongoose.model('mailcode', EmailCodeSchema)
             })
 
 ```
-在router文件中发起请求时操作数据时存储数据即可
-
