@@ -80,6 +80,7 @@ module.exports = {
 6. 使用mongodb连接数据库
    先安装mongoose插件，建立一个文件夹db，写入基本的数据库连接操作
 
+
 ```js
 const mongoose = require('mongoose')
     //连接数据库的固定写法
