@@ -1,9 +1,12 @@
 # 搭建一个博客（管理）系统
 
 ### 使用Vue、node、koa 、ejs、mongoose等技术实现博客系统的开发
-1、每次修改代码都需要使用node index.js 很麻烦，就安装nodemon 在json中配置只需要一次npm run serve 即可自动执行文件
+1、每次修改代码都需要使用node index.js 很麻烦，就安装nodemon 在json中配置只需要一次npm run serve 即可自动执行文件。
+
 2、使用koa-router 和 require-directory 实现路由自动化。
+
 3、koa2中使用ejs模板引擎，安装koa-views/ejs，注意路由放 require('koa-views')后面，否则会报错。
+
 ```js
 //文件也要引入正确
 const views = require('koa-views')
@@ -15,8 +18,6 @@ app.use(views('./views/', {
         }
     }))
 ```html
-register.html:
-```
 <body>
    hello <%= name %>
 </body>
@@ -73,8 +74,6 @@ module.exports = {
     }
 }
 ```
-
-
 5、实现发送随机验证码——安装number-random
 实现六位数的随机数：numRandom(100000, 999999)
 
